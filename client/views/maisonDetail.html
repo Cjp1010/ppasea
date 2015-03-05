@@ -1,0 +1,19 @@
+<template name="maisonDetail">
+	<div class="row">
+		<a href="/" class="btn btn-primary"><i class="mdi-image-navigate-before"></i> Retour</a>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail shadow-z-1">
+				<img src="{{contenu.data.lead_image_url}}" alt="">
+				<div class="caption">
+					<h3><a href="{{url}}">{{contenu.data.title}}</a> <small><i class="mdi-communication-call-made"></i></small></h3>
+				</div>
+			</div>
+		</div>
+		<div class="comment-section"></div>
+		<div class="col-sm-6 col-md-8">
+			{{> commentsBox id=_id}}
+		</div>
+	</div>
+</template>
